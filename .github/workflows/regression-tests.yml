@@ -26,5 +26,5 @@ jobs:
         pip install -r requirements.txt
     - name: Run API Tests
       run: |
-        cdmod +x ./backend/run.sh
+        chmod +x ./backend/run.sh
         cd backend/ && ./run.sh
