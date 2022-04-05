@@ -25,16 +25,16 @@ jobs:
         pip install build
         pip install -r requirements.txt
     - name: Run API Tests
-      run: |
+      run: | 
         chmod +x ./backend/run.sh
         cd backend/ && ./run.sh
     - name: Upload api test results
-      uses: actions/upload-artifact@v3.0.0
+      uses: actions/upload-artifact@v2.3.1
       if: always()
       with:
         name: api-reports
         path: backend/logs
-    - name: Test reporter
+    - name: Test Reporter
       uses: dorny/test-reporter@v1.5.0
       with:
         name: API Test Result
