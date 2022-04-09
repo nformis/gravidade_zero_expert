@@ -1,5 +1,5 @@
 delorean="robot -l NONE -o NONE -r NONE tasks/Delorean.robot"
-teste="robot -x xunit.xml -d ./logs/tests ./tests"
+teste="robot -x xunit.xml -d ./logs"
 
 echo "Construindo ambiente:"
 $delorean
