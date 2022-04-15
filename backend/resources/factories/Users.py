@@ -98,7 +98,7 @@ def factory_search_for_geeks():
             },
             {
                 'name': 'Arnim Zola',
-                'email': 'zola@hidra.com',
+                'email': 'zola@hydra.com',
                 'password': 'pwd123',
                 'geek_profile': {
                     'whatsapp': '21999999999',
